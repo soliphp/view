@@ -1,0 +1,30 @@
+{
+    "name": "soliphp/view",
+    "description": "Smarty and Twig View Parser package",
+    "type": "library",
+    "keywords": ["templating", "view", "soliphp"],
+    "homepage": "https://github.com/soliphp/view",
+    "support": {
+        "issues": "https://github.com/soliphp/view/issues",
+        "source": "https://github.com/soliphp/view"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ueaner",
+            "email": "ueaner@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soli\\": "src/"
+        }
+    },
+    "suggest": {
+        "smarty/smarty": "Smarty templating system",
+        "twig/twig": "Twig templating system"
+    }
+}
