@@ -15,10 +15,14 @@
     <rule ref="PSR2"/>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="PSR1">
-        <exclude name="PSR1.Classes.ClassDeclaration"/>
+        <exclude name="PSR1.Files.SideEffects.FoundWithSymbols"/>
     </rule>
 
     <!-- ignore vendor -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
-    <exclude-pattern>*/examples/*</exclude-pattern>
+    <exclude-pattern>*/cache/*</exclude-pattern>
+
+    <!-- Paths to check -->
+    <file>src</file>
+    <file>examples</file>
 </ruleset>
