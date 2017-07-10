@@ -20,7 +20,7 @@ $view->setEngine(function () use ($config, $view) {
     $engine = new SmartyEngine($view);
     // 开启 debug 不进行缓存
     $engine->setDebug(true);
-    $engine->setOptions(array(
+    $engine->setOptions([
         'compile_dir'     => $config['viewsCompileDir'],
         'cache_dir'       => $config['viewsCacheDir'],
         'caching'         => true,
@@ -28,7 +28,7 @@ $view->setEngine(function () use ($config, $view) {
         'cache_lifetime'  => 86400,
         'left_delimiter'  => '{{',
         'right_delimiter' => '}}',
-    ));
+    ]);
     return $engine;
 });
 
@@ -37,5 +37,3 @@ $view->setVar('name', 'Soli');
 $template = 'home/index';
 
 echo $view->render($template);
-
-

@@ -30,4 +30,3 @@ $view->setVar('name', 'Soli');
 $template = 'home/index';
 
 echo $view->render($template);
-
