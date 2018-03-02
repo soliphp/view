@@ -15,7 +15,27 @@ Soli View
 
 ## 使用
 
-详见：[examples].
+[examples] 目录下提供了 Soli View 的相关示例。
+
+### Twig
+
+安装 Twig 模版引擎：
+
+    composer require twig/twig
+
+运行示例：
+
+    php examples/twig.php
+
+### Smarty
+
+安装 Smarty 模版引擎：
+
+    composer require smarty/smarty
+
+运行示例：
+
+    php examples/smarty.php
 
 ## License
 

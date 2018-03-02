@@ -3,7 +3,7 @@
 use Soli\View;
 use Soli\View\Engine\Twig as TwigEngine;
 
-include __DIR__ . "/vendor/autoload.php";
+include __DIR__ . "/../vendor/autoload.php";
 
 $config = [
     'viewsDir'      => __DIR__ . '/views/twig/',

@@ -1,5 +1,5 @@
 !.gitkeep
-examples/vendor/*
+vendor/*
 examples/cache/*
 examples/composer.lock
 examples/composer.json
