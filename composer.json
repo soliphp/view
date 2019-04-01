@@ -25,6 +25,6 @@
     },
     "suggest": {
         "smarty/smarty": "Smarty templating system",
-        "twig/twig": "Twig templating system"
+        "twig/twig": "Twig 2.7+ templating system"
     }
 }

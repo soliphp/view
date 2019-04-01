@@ -22,10 +22,10 @@ class Twig extends Engine implements EngineInterface
      */
     public function __construct(ViewInterface $view)
     {
-        $loader = new \Twig_Loader_Filesystem();
+        $loader = new \Twig\Loader\FilesystemLoader();
         $loader->setPaths($view->getViewsDir());
 
-        $twig = new \Twig_Environment($loader);
+        $twig = new \Twig\Environment($loader);
         $this->engine = $twig;
 
         parent::__construct($view);
@@ -44,7 +44,7 @@ class Twig extends Engine implements EngineInterface
             $this->engine->enableAutoReload();
             // 不进行缓存
             $this->setCacheDir(false);
-            $this->engine->addExtension(new \Twig_Extension_Debug());
+            $this->engine->addExtension(new \Twig\Extension\DebugExtension());
         } else {
             $this->engine->disableDebug();
             $this->engine->disableAutoReload();
